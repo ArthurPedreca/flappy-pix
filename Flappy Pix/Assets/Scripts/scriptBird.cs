@@ -25,7 +25,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Impulsionar()
     {
 
-        this.fisica.AddForce(Vector2.up * 3, ForceMode2D.Impulse);
+        this.fisica.AddForce(Vector2.up * velocidade, ForceMode2D.Impulse);
 
         
     }
