@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    [SerializeField]
+    private float velocidade = 3;
     Rigidbody2D fisica;
     // Start is called before the first frame update
     void Awake()
@@ -23,7 +25,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Impulsionar()
     {
 
-        this.fisica.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+        this.fisica.AddForce(Vector2.up * 3, ForceMode2D.Impulse);
 
         
     }
